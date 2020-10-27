@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <CheckBoxPreference
+        android:layout="@layout/custom_checkbox_preference"
+        android:defaultValue="false"
+        android:key="@string/key_pref_allow_status_check"
+        android:summary="@string/description_status_check"
+        android:title="@string/pref_title_status_check" />
+
+    <CheckBoxPreference
+        android:layout="@layout/custom_checkbox_preference"
+        android:id="@+id/settings_location"
+        android:defaultValue="false"
+        android:key="@string/key_pref_allow_location"
+        android:summary="@string/description_location"
+        android:title="@string/prefs_title_location" />
+
+    <Preference
+        android:layout="@layout/custom_checkbox_preference"
+        android:key="@string/key_pref_set_file_manager_preset"
+        android:summary="@string/prefs_presets_summary"
+        android:title="@string/prefs_titile_set_file_manager_presets">
+        <intent android:targetPackage="ir.the_moment.carmichael_sms"
+            android:targetClass="ir.the_moment.carmichael_sms.fileManager.filePreset.FilePresetActivity" />
+    </Preference>
+
+    <CheckBoxPreference
+        android:layout="@layout/custom_checkbox_preference"
+        android:id="@+id/settings_camera"
+        android:defaultValue="false"
+        android:key="@string/key_pref_allow_taking_pictures"
+        android:summary="@string/description_take_pictures"
+        android:title="@string/prefs_title_allow_taking_pictures" />
+
+    <CheckBoxPreference
+        android:layout="@layout/custom_checkbox_preference"
+        android:id="@+id/settings_wipe"
+        android:defaultValue="false"
+        android:key="@string/key_pref_allow_wipe"
+        android:summary="@string/description_wipe"
+        android:title="@string/prefs_title_allow_wipe" />
+
+
+    <CheckBoxPreference
+        android:layout="@layout/custom_checkbox_preference"
+        android:id="@+id/settings_lock"
+        android:defaultValue="false"
+        android:key="@string/key_pref_allow_lock_device"
+        android:summary="@string/description_lock"
+        android:title="@string/key_pref_title_lock_device" />
+
+    <CheckBoxPreference
+        android:layout="@layout/custom_checkbox_preference"
+        android:defaultValue="false"
+        android:key="@string/key_pref_allow_boot_notification"
+        android:summary="@string/description_boot_notification"
+        android:title="@string/boot_notification" />
+
+    <CheckBoxPreference
+        android:layout="@layout/custom_checkbox_preference"
+        android:defaultValue="false"
+        android:key="@string/key_pref_allow_disable_silent"
+        android:title="@string/disable_silent"
+        android:summary="@string/description_disable_silent"/>
+
+</PreferenceScreen>

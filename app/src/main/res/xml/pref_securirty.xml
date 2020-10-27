@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:layout="@layout/custom_checkbox_preference"
+        android:key="@string/key_pref_user_password"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:inputType="textPassword"
+        android:minEms="6"
+        android:summary="@string/prefs_password_summary"
+        android:title="@string/prefs_title_password" />
+
+    <Preference
+        android:layout="@layout/custom_checkbox_preference"
+        android:key="@string/key_pref_app_password"
+        android:summary="@string/pref_summary_app_password"
+        android:title="@string/key_pref_title_app_password"/>
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:layout="@layout/custom_checkbox_preference"
+        android:key="@string/key_pref_disable_notifications"
+        android:title="@string/suppress_messages_notifications"
+        android:summary="@string/suppress_messages_notifications_summary" />
+
+    <CheckBoxPreference
+        android:layout="@layout/custom_checkbox_preference"
+        android:defaultValue="false"
+        android:key="@string/key_pref_enable_max_attempts"
+        android:summary="@string/pref_summary_permanent_lock"
+        android:title="@string/pref_title_lock_max_attempts" />
+
+    <EditTextPreference
+        android:dependency="@string/key_pref_enable_max_attempts"
+        android:key="@string/key_pref_lock_max_attempts"
+        android:inputType="numberSigned"
+        android:hint="@string/max_attempts_hint"
+        android:summary="@string/pref_summary_max_attempts"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/max_attempt" />
+
+    <CheckBoxPreference
+        android:layout="@layout/custom_checkbox_preference"
+        android:id="@+id/hide_app_icon"
+        android:defaultValue="false"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:key="@string/key_pref_hide_app_icon"
+        android:summary="@string/hide_app_icon_summary"
+        android:title="@string/hide_app_icon" />
+
+    <EditTextPreference
+        android:dependency="@string/key_pref_hide_app_icon"
+        android:key="@string/key_pref_hide_app_icon_number"
+        android:title="@string/hint_phont_number"
+        android:defaultValue="1234"
+        android:singleLine="true"
+        android:hint="@string/hide_app_icon_hint" />
+
+</PreferenceScreen>

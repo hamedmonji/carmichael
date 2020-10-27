@@ -1,0 +1,25 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="the_moment.carmichael_sms.ui.controlZone.ControlZonesFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/control_zones_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/add_control_zone"
+        app:rippleColor="@color/colorAccent"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:src="@drawable/signs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</android.support.design.widget.CoordinatorLayout>

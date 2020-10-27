@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/contacts_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_marginRight="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <include layout="@layout/item_contact_alphabet_sort" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_gravity="start|center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:contentDescription="@string/contact_image_description"
+            android:id="@+id/image"
+            tools:src="@drawable/blue_electric"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@+id/image_text"
+            tools:text="V"
+            android:textSize="30sp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_gravity="start|center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:id="@+id/linearLayout11"
+            android:layout_marginRight="8dp">
+
+            <TextView
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="start|center"
+                android:gravity="start|center"
+                android:textColor="@color/black"
+                android:id="@+id/contact_name"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Victoria" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="start|center"
+                android:gravity="start|center"
+                android:textColor="@color/dark_gray"
+                android:id="@+id/contact_number"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="09138798609" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group />
+        <item
+            android:id="@+id/nav_manage_devices"
+            android:icon="@drawable/manage_device"
+            android:title="@string/manage_devices" />
+
+        <item
+            android:icon="@drawable/security_report"
+            android:id="@+id/nav_security_alerts"
+            android:title="@string/menu_title_security_alerts" />
+
+        <item
+            android:icon="@drawable/settings"
+            android:id="@+id/nav_settings"
+            android:title="@string/menu_navigation_title_settings" />
+
+        <item android:title="@string/about"
+            android:id="@+id/about"
+            android:icon="@drawable/info"/>
+</menu>

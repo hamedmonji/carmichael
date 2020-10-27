@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dialog_add_device_types" />
+
+    <string-array name="location_update_frequency">
+        <item>اپدیت ارسال نکن</item>
+        <item>۱ دقیقه</item>
+        <item>۳ دقیقه</item>
+        <item>۵ دقیقه</item>
+        <item>۱۰ دقیقه</item>
+        <item>۲۰ دقیقه</item>
+        <item>۳۰ دقیقه</item>
+        <item>۱ ساعت</item>
+        <item>۳ ساعت</item>
+        <item>۵ ساعت</item>
+        <item>۱۰ ساعت</item>
+        <item>۱ روز</item>
+    </string-array>
+
+    <string-array name="location_interval">
+        <item>۱۵ ثانیه</item>
+        <item>۳۰ ثانیه</item>
+        <item>۱ دقیقه</item>
+        <item>۲ دقیقه</item>
+        <item>۳ دقیقه</item>
+        <item>۵ دقیقه</item>
+        <item>۱۰ دقیقه</item>
+        <item>۱۵ دقیقه</item>
+        <item>۲۰ دقیقه</item>
+        <item>۳۰ دقیقه</item>
+        <item>۱ ساعت</item>
+        <item>۲ ساعت</item>
+        <item>۳ ساعت</item>
+        <item>۵ ساعت</item>
+        <item>۱۰ ساعت</item>
+    </string-array>
+
+    <string-array name="take_pictures_interval">
+        <item>غیر فعال کردن</item>
+        <item>۱ دقیقه</item>
+        <item>۳ دقیقه</item>
+        <item>۵ دقیقه</item>
+        <item>۱۰ دقیقه</item>
+        <item>۲۰ دقیقه</item>
+        <item>۳۰ دقیقه</item>
+        <item>۱ ساعت</item>
+        <item>۲ ساعت</item>
+        <item>۳ ساعت</item>
+        <item>۵ ساعت</item>
+    </string-array>
+
+    <string-array name="upload_pictures_interval">
+        <item>۵ دقیقه</item>
+        <item>۱۰ دقیقه</item>
+        <item>۲۰ دقیقه</item>
+        <item>۳۰ دقیقه</item>
+        <item>۱ ساعت</item>
+        <item>۲ ساعت</item>
+        <item>۳ ساعت</item>
+        <item>۵ ساعت</item>
+        <item>۱۰ ساعت</item>
+        <item>۱ روز</item>
+    </string-array>
+
+    <string-array name="drawer_items">
+        <item>@string/manage_devices</item>
+        <item>@string/menu_navigation_title_settings</item>
+    </string-array>
+
+</resources>

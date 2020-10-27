@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="the_moment.carmichael_sms.a.the_moment.carmichael_sms.ui.requests.addDevice.AddAssetActivity">
+
+    <include layout="@layout/refresh_no_internet"/>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include android:id="@+id/device_info" layout="@layout/device_info"/>
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/rejected_message"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:text="@string/request_rejected_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/add_asset"
+        android:textAllCaps="false"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="@string/add_asset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

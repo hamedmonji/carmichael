@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/show_available_tasks"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
+            app:cardCornerRadius="5dp"
+            android:layout_width="125dp"
+            android:layout_height="125dp">
+
+            <TextView
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:text="@string/show_tasks"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/tasks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </android.support.v7.widget.CardView>
+
+        <ir.the_moment.carmichael_sms.ui.customView.TaskView
+            android:id="@+id/status_check"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:gravity="center"
+            app:cardCornerRadius="5dp"
+            app:src="@drawable/status"
+            app:taskName="@string/task_status_check"
+            app:text="@string/status_check"
+            app:permission="@integer/status_check"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/set_as_found"
+        android:layout_marginBottom="3dp"
+        app:cardCornerRadius="5dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="125dp">
+
+        <TextView
+            android:gravity="center"
+            android:text="@string/set_status_to_ok"
+            android:layout_gravity="center"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/device_found"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

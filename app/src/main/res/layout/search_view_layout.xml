@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    tools:showIn="@layout/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.arlib.floatingsearchview.FloatingSearchView
+        android:id="@+id/floating_search_view"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="@dimen/search_view_margin_top"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:floatingSearch_suggestionsListAnimDuration="250"
+        app:floatingSearch_showSearchKey="true"
+        app:floatingSearch_dimBackground="false"
+        app:floatingSearch_leftActionMode="noLeftAction"
+        app:floatingSearch_showVoiceInput="false"
+        app:floatingSearch_actionMenuOverflowColor="@color/colorAccent"
+        app:floatingSearch_leftActionColor="@color/colorAccent"
+        app:floatingSearch_dividerColor="@color/colorPrimary"
+        app:floatingSearch_menuItemIconColor="@color/colorAccent"
+        app:floatingSearch_dismissOnOutsideTouch="true"
+        app:floatingSearch_close_search_on_keyboard_dismiss="false"/>
+
+</merge>

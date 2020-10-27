@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/navDrawer_header_height">
+
+    <ImageView
+        android:id="@+id/userBackground"
+        android:scaleType="centerCrop"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:padding="8dp"
+        android:layout_gravity="start|bottom"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_gravity="start"
+                android:id="@+id/userPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/light_blue" />
+
+            <TextView
+                android:textStyle="bold"
+                tools:visibility="visible"
+                android:visibility="gone"
+                android:id="@+id/user_photo_text"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:textSize="26sp"
+                tools:text="V"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+        <TextView
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/name"
+            tools:text="vaas montenegru"
+            android:layout_gravity="bottom|start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_marginBottom="5dp" />
+
+    </LinearLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

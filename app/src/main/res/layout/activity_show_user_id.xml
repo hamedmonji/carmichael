@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="the_moment.carmichael_sms.ui.requests.addDevice.withNoSim.ShowUserIdActivity">
+
+    <ImageView
+        android:layout_margin="8dp"
+        android:src="@drawable/add_device_512"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+
+    <android.support.v7.widget.CardView
+        android:layout_margin="16dp"
+        android:minHeight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:gravity="center"
+            tools:text="923flakdnf23r"
+            android:textColor="@color/color_text_input"
+            android:id="@+id/user_id"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_margin="16dp"
+        android:text="@string/add_device_instruction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

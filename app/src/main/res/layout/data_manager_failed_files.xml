@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_margin="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:gravity="center"
+        android:text="@string/title_failed_files_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/download_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/failed_download_files"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        tools:text="files list\n files list \n flies list "        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/encrypt_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/failed_encrypt_files"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        tools:text="files list\n files list \n flies list "        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/delete_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/failed_delete_files"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        tools:text="files list\n files list \n flies list "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/hide_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/failed_hide_files"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        tools:text="files list\n files list \n flies list "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+
+</ScrollView>

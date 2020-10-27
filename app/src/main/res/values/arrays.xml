@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="file_manager_dialog_options">
+        <item><string name="file_manager_dialog_options_hide">Hide files after Securing</string></item>
+        <item><string name="file_manager_dialog_options_delete_after_download">Delete after download</string></item>
+    </array>
+
+    <string-array name="location_update_frequency">
+        <item>don\'t send updates</item>
+        <item>1 min</item>
+        <item>3 min</item>
+        <item>5 min</item>
+        <item>10 min</item>
+        <item>20 min</item>
+        <item>30 min</item>
+        <item>1 hour</item>
+        <item>3 hour</item>
+        <item>5 hour</item>
+        <item>10 hour</item>
+        <item>1 day</item>
+    </string-array>
+
+    <string-array name="location_interval">
+        <item>15 sec</item>
+        <item>30 sec</item>
+        <item>1 min</item>
+        <item>2 min</item>
+        <item>3 min</item>
+        <item>5 min</item>
+        <item>10 min</item>
+        <item>15 min</item>
+        <item>20 min</item>
+        <item>30 min</item>
+        <item>1 hour</item>
+        <item>2 hour</item>
+        <item>3 hour</item>
+        <item>5 hour</item>
+        <item>10 hour</item>
+    </string-array>
+
+    <string-array name="take_pictures_interval">
+        <item>disable</item>
+        <item>1 min</item>
+        <item>3 min</item>
+        <item>5 min</item>
+        <item>10 min</item>
+        <item>20 min</item>
+        <item>30 min</item>
+        <item>1 hour</item>
+        <item>2 hour</item>
+        <item>3 hour</item>
+        <item>5 hour</item>
+    </string-array>
+
+    <string-array name="upload_pictures_interval">
+        <item>5 min</item>
+        <item>10 min</item>
+        <item>20 min</item>
+        <item>30 min</item>
+        <item>1 hour</item>
+        <item>2 hour</item>
+        <item>3 hour</item>
+        <item>5 hour</item>
+        <item>10 hour</item>
+        <item>1 day</item>
+    </string-array>
+
+    <string-array name="drawer_items">
+        <item>@string/manage_devices</item>
+        <item>@string/menu_navigation_title_settings</item>
+    </string-array>
+
+</resources>

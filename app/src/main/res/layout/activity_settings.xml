@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="the_moment.carmichael_sms.a.the_moment.carmichael_sms.ui.settings.SettingsActivity">
+
+    <LinearLayout
+        android:id="@+id/user_profile_root"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:contentDescription="@string/content_description_background_image"
+                android:id="@+id/user_background_image"
+                android:scaleType="centerCrop"
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/settings_image_height" />
+
+            <LinearLayout
+                android:layout_marginTop="?attr/actionBarSize"
+                android:layout_gravity="start"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/user_profile_image"
+                        android:layout_gravity="bottom|end"
+                        tools:src="@drawable/blue_electric"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:id="@+id/user_profile_image_text"
+                        tools:visibility="visible"
+                        android:visibility="gone"
+                        android:textColor="@color/white"
+                        android:textSize="26sp"
+                        tools:text="V"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </FrameLayout>
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="18sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white"
+                    android:id="@+id/name"
+                    android:gravity="start"
+                    tools:text="vaas"
+                    android:textAlignment="viewStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <include layout="@layout/toolbar" />
+
+        </FrameLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_marginStart="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="8dp"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:text="@string/settings"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:textAllCaps="false"
+                            android:layout_marginBottom="4dp"
+                            android:textSize="16sp"
+                            android:id="@+id/security"
+                            android:gravity="start|center"
+                            android:text="@string/application_settings"
+                            android:textColor="@color/black"
+                            android:drawablePadding="8dp"
+                            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/shield"
+                            android:drawableStart="@drawable/shield" />
+
+                        <View
+                            android:alpha=".4"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/dark_gray"
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"/>
+
+                        <TextView
+                            android:textAllCaps="false"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginBottom="2dp"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:id="@+id/enabled_tasks"
+                            android:drawablePadding="8dp"
+                            android:drawableLeft="@drawable/enabled_tasks"
+                            android:drawableStart="@drawable/enabled_tasks"
+                            android:gravity="start|center"
+                            android:text="@string/enabled_tasks"
+                            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_marginStart="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="8dp"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:text="@string/support"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:textAllCaps="false"
+                            android:layout_marginBottom="4dp"
+                            android:textSize="16sp"
+                            android:id="@+id/faq"
+                            android:gravity="start|center"
+                            android:text="@string/faq_help"
+                            android:textColor="@color/black"
+                            android:drawablePadding="8dp"
+                            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/support"
+                            android:drawableStart="@drawable/support" />
+
+                        <View
+                            android:alpha=".4"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/dark_gray"
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"/>
+
+                        <TextView
+                            android:textAllCaps="false"
+                            android:layout_marginBottom="4dp"
+                            android:textSize="16sp"
+                            android:id="@+id/bug_report"
+                            android:gravity="start|center"
+                            android:text="@string/bug_report"
+                            android:textColor="@color/black"
+                            android:drawablePadding="8dp"
+                            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/bug_report"
+                            android:drawableStart="@drawable/bug_report" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+    <FrameLayout
+        android:fitsSystemWindows="true"
+        android:id="@+id/settings_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/change_image"
+        android:src="@drawable/camera_black"
+        app:backgroundTint="@color/white"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_anchor="@id/user_background_image"
+        app:layout_anchorGravity="end|bottom"
+        app:fabSize="normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</android.support.design.widget.CoordinatorLayout>

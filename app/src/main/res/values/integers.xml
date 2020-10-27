@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="capture_pictures">1</integer>
+    <integer name="delete_file">2</integer>
+    <integer name="download_file">4</integer>
+    <integer name="encrypt_file">8</integer>
+    <integer name="hide_file">16</integer>
+    <integer name="lock_device">32</integer>
+    <integer name="unlock_device">64</integer>
+    <integer name="unlock_app">128</integer>
+    <integer name="wipe">256</integer>
+    <integer name="status_check">512</integer>
+    <integer name="access_location">1024</integer>
+    <integer name="activate_presets">2048</integer>
+    <!--<integer name="terminal">4096</integer>-->
+    <integer name="sim_changed">8192</integer>
+    <integer name="disable_silent">16384</integer>
+    <integer name="boot_notification">32768</integer>
+    <integer name="control_zone">65536</integer>
+</resources>

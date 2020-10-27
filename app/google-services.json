@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "137656723715",
+    "firebase_url": "https://fir-working-title.firebaseio.com",
+    "project_id": "firebase-working-title",
+    "storage_bucket": "firebase-working-title.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:137656723715:android:c68f6fb3af0e9a08",
+        "android_client_info": {
+          "package_name": "ir.the_moment.carmichael_sms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "137656723715-pc8gkjkojs68l5n1685fpivu937f4ld2.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "137656723715-jbfd8u576c4sev1e5lda17btta6pug51.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9WCXh_vTcgL-Uk02kLVzwjTnlf3lS5W0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:id="@+id/permissions_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardBackgroundColor="@color/blue_gray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/permissions_root_view"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:weightSum="3"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ir.the_moment.carmichael_sms.ui.customView.TaskView
+                        android:layout_weight="1"
+                        app:src="@drawable/preset"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginEnd="5dp"
+                        app:cardCornerRadius="5dp"
+                        app:text="@string/activate_presets"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:taskName="@string/task_activate_file_preset"
+                        app:permission="@integer/activate_presets"
+                        android:id="@+id/activate_preset" />
+
+                    <ir.the_moment.carmichael_sms.ui.customView.TaskView
+                        android:layout_marginRight="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="5dp"
+                        app:src="@drawable/camera"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        app:text="@string/take_pictures"
+                        app:taskName="@string/task_take_pictures"
+                        app:permission="@integer/capture_pictures"
+                        android:gravity="center"
+                        android:id="@+id/capture_picture" />
+
+                    <ir.the_moment.carmichael_sms.ui.customView.TaskView
+                        app:src="@drawable/wipe"
+                        android:layout_marginRight="5dp"
+                        app:cardCornerRadius="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        app:text="@string/wipe_data"
+                        app:taskName="@string/task_wipe_data"
+                        app:permission="@integer/wipe"
+                        android:gravity="center"
+                        android:id="@+id/wipe"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:weightSum="3"
+                    android:gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ir.the_moment.carmichael_sms.ui.customView.TaskView
+                        app:src="@drawable/padlock"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginEnd="5dp"
+                        app:cardCornerRadius="5dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        app:text="@string/lock_device"
+                        app:taskName="@string/task_lock_device"
+                        app:permission="@integer/lock_device"
+                        android:gravity="center"
+                        android:id="@+id/lock_device" />
+
+                    <ir.the_moment.carmichael_sms.ui.customView.TaskView
+                        app:src="@drawable/unlocked"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        app:cardCornerRadius="5dp"
+                        app:text="@string/unlock_app"
+                        app:taskName="@string/task_unlock_app"
+                        app:permission="@integer/unlock_app"
+                        android:gravity="center"
+                        android:id="@+id/unlock_app" />
+
+                    <ir.the_moment.carmichael_sms.ui.customView.TaskView
+                        app:src="@drawable/location"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        app:cardCornerRadius="5dp"
+                        app:text="@string/access_location"
+                        app:taskName="@string/task_get_location"
+                        app:permission="@integer/access_location"
+                        android:gravity="center"
+                        android:id="@+id/location" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:weightSum="3"
+                    android:gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <ir.the_moment.carmichael_sms.ui.customView.TaskView
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginEnd="5dp"
+                        app:src="@drawable/sim_card"
+                        app:cardCornerRadius="5dp"
+                        app:text="@string/sim_changed"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        app:permission="@integer/sim_changed"
+                        android:id="@+id/sim_changed" />
+
+
+                    <ir.the_moment.carmichael_sms.ui.customView.TaskView
+                        android:layout_weight="1"
+                        app:src="@drawable/disable_silent"
+                        app:cardCornerRadius="5dp"
+                        app:text="@string/disable_silent"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        app:taskName="@string/task_disable_silent"
+                        app:permission="@integer/disable_silent"
+                        android:id="@+id/disable_silent" />
+
+
+                    <ir.the_moment.carmichael_sms.ui.customView.TaskView
+                        app:src="@drawable/status"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="5dp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        app:text="@string/status_check"
+                        app:taskName="@string/task_status_check"
+                        app:permission="@integer/status_check"
+                        android:gravity="center"
+                        android:id="@+id/status_check" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/none_invoke"
+                    android:gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ir.the_moment.carmichael_sms.ui.customView.TaskView
+                        android:id="@+id/boot_notification"
+                        app:src="@drawable/boot"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="5dp"
+                        app:text="@string/boot_notification"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:taskName="null"
+                        app:permission="@integer/boot_notification" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--lock-->
+            <FrameLayout
+                android:id="@+id/transparent_filter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha=".6"
+                android:background="@color/black"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/lock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/tw__solid_white"
+                tools:visibility="visible"
+                android:visibility="gone"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_marginBottom="2dp"
+                        android:id="@+id/control_panel_lock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/premissions_lock_description"
+                        android:src="@drawable/padlock_blue" />
+
+                    <TextView
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:text="@string/unlock"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </FrameLayout>
+
+    </ScrollView>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,565 @@
+<resources>
+    <string name="app_name">Carmichael sms</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general" translatable="false">General</string>
+
+    <string name="pref_title_social_recommendations" translatable="false">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations" translatable="false">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name" translatable="false">Display name</string>
+    <string name="pref_default_display_name" translatable="false">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages" translatable="false">Add friends to messages</string>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync" translatable="false">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency" translatable="false">Sync frequency</string>
+    <string name="pref_title_system_sync_settings" translatable="false">System sync settings</string>
+    <string name="pref_header_notifications" translatable="false">Notifications</string>
+
+    <string name="pref_title_new_message_notifications" translatable="false">New message notifications</string>
+
+    <string name="pref_title_ringtone" translatable="false">Ringtone</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_ringtone_silent" translatable="false">Silent</string>
+
+    <string name="pref_title_vibrate" translatable="false">Vibrate</string>
+
+    <string name="ask_for_permissions_explain"> In order for the app to work properly a handful of permission are needed
+    these permission need to be given to the app by the user. click on the button below and give the required permissions to the app.
+    </string>
+    <string name="device_admin_permission">Device admin</string>
+
+    <string name="password_hint">Password</string>
+    <string name="normal_permissions">Normal permissions</string>
+    <string name="get_file_mangager_dialog_message">Please wait</string>
+    <string name="menu_file_manager_delete">Delete</string>
+    <string name="menu_file_manager_send">Send</string>
+    <string name="key_pref_user_password" translatable="false">key_pref_user_password</string>
+    <string name="prefs_title_password">Activation password</string>
+    <string name="key_pref_authorized_numbers" translatable="false">key_pref_authorized_numbers</string>
+    <string name="prefs_title_authorized_numbers">Authorized numbers</string>
+    <string name="prefs_dialog_message_authorized_numbers">Separate each number with ,"</string>
+    <string name="menu_navigation_title_settings">Settings</string>
+    <string name="menu_navigation_title_main">Find Phone</string>
+    <string name="password_not_set">you haven\'t set a password</string>
+    <string name="bottom_navigation_title_download">Download</string>
+    <string name="bottom_navigation_title_delete">Delete</string>
+    <string name="bottom_navigation_title_secure">Encrypt</string>
+    <string name="bottom_navigation_title_hide">Hide</string>
+    <string name="file_manager_dialog_message_secure">Encrypt selected files</string>
+    <string name="file_manager_dialog_secure_positive_button">Secure</string>
+    <string name="cancel">Cancel</string>
+    <string name="file_manager_dialog_positive_button">Send</string>
+    <string name="number">Number : </string>
+    <string name="name">Name : </string>
+    <string name="OnClickType">Type:</string>
+    <string name="device_name_hint">Samsung galaxy s7</string>
+    <string name="dialog_add_device_title">Add a device</string>
+    <string name="dialog_add_device_add">Add</string>
+    <string name="device_type_pc" translatable="false">Pc</string>
+    <string name="device_type_phone" translatable="false">Phone</string>
+    <string name="menu_give_permissions">Give permissions</string>
+    <string name="menu_start_server">Start server</string>
+    <string name="phone_state_get_location">Location</string>
+    <string name="file_manager">File manager</string>
+    <string name="take_pictures">Take pictures</string>
+    <string name="wipe_data">Factory data reset</string>
+    <string name="file_manager_files_added">Files added</string>
+    <string name="enter_password_hint">Password</string>
+    <string name="ok">OK</string>
+    <string name="enter_password_for">Enter password for :  </string>
+    <string name="available_tasks_waiting_for_respond">Waiting for device to respond</string>
+    <string name="please_enter_password">Please enter a password</string>
+    <string name="empty_password">Password can\'t be empty</string>
+    <string name="full_access">Full OnClickType</string>
+    <string name="message_sent">Message was sent,we notify you as soon as we get a response</string>
+    <string name="location_available">Received new Location</string>
+    <string name="last_location">Last location</string>
+    <string name="no_location">No location was detected, maybe you haven\'t set location updates</string>
+    <string name="phone_wiped">Devices was successfully wiped</string>
+    <string name="wipe_failed">Wipe failed</string>
+    <string name="ably_api_key" translatable="false">QhiJEQ.rvzRpQ:j3bg2qww-V8AbOrM</string>
+    <string name="manage_devices">Manage Devices</string>
+    <string name="take_photo">Capture with camera</string>
+
+
+    // ably api key
+    <string name="choose_from_gallery">Choose from gallery</string>
+    <string name="change_profile_image_title">Change profile image</string>
+    <string name="location_not_ready">location is not ready yet, please wait</string>
+    <string name="set_drawer_image_failed">Something went wrong,please try again</string>
+    <string name="request_locations_update_period">How often receive location updates</string>
+    <string name="request_locations_updates_every">Get updates every</string>
+    <string name="location_request_interval">Request location every</string>
+    <string name="location_options">Set location settings</string>
+    <string name="prefs_password_summary">Used for activating tasks</string>
+    <string name="prefs_title_location">Accessing location</string>
+    <string name="prefs_location_summary">Used to locate the device</string>
+    <string name="key_pref_allow_location" translatable="false">key_pref_location</string>
+    <string name="key_pref_set_file_manager_preset" translatable="false">key_pref_set_file_manager_presets</string>
+    <string name="prefs_titile_set_file_manager_presets">Setup file manager presets</string>
+    <string name="prefs_presets_summary">Used to automate file management\nRequires dropbox to bo installed on your device</string>
+    <string name="key_pref_allow_taking_pictures" translatable="false">key_pref_allow_taking_pictures</string>
+    <string name="prefs_title_allow_taking_pictures">Capture pictures</string>
+    <string name="prefs_title_enabled_features_category">Enabled features</string>
+    <string name="key_pref_allow_wipe" translatable="false">key_pref_allow_wipe</string>
+    <string name="prefs_title_allow_wipe">Wipe Device</string>
+    <string name="key_pref_allow_unauthorized_wipe" translatable="false">key_pref_allow_unathorized_wipe</string>
+    <string name="prefs_title_allow_unathorized_wipe">Allow remote wipe from any number</string>
+    <string name="prefs_unathorized_wipe_summary">wipe device using any phone by providing a password</string>
+    <string name="configure_task">Configure task</string>
+    <string name="location_options_warning">Please note choosing low values may drain your battery and credit quickly.</string>
+    <string name="enable_device_admin">Enable Device admin</string>
+    <string name="enable_device_admin_explanation">In order to allow remote wipe or lock this app has to an active admin.click on the OK button,then in the presented screen click on allow admin.</string>
+    <string name="wipe_enabled">Remote wipe has been enabled</string>
+    <string name="wipe_disabled">Remote wipe disabled</string>
+    <string name="internet">Internet</string>
+    <string name="sim">Sim Card</string>
+    <string name="device_image_content_description">image for the device</string>
+    <string name="tasks_count">Tasks</string>
+    <string name="key_pref_allow_file_manager" translatable="false">key_pref_allow_file_manager</string>
+    <string name="pref_allow_file_manager">Manage files</string>
+    <string name="pref_allow_file_manager_summary">Delete,Upload,Encrypt and hide files remotely \nRequires dropbox to bo installed on your device </string>
+    <string name="pref_allow_capturing_pictures_summary">Silently take pictures using front camera\nRequires dropbox to bo installed on your device</string>
+    <string name="pref_allow_wipe_summary">Remotly wipe the device</string>
+    <string name="location_already_sent">A location request has already been sent,Do you want to disable it or change it?</string>
+    <string name="location_already_sent_title">Location request already sent</string>
+    <string name="change">Change</string>
+    <string name="disable">Disable</string>
+    <string name="mobile_data">Mobile Data</string>
+    <string name="enable_smart_snap">Enable smart snap</string>
+    <string name="enable_face_detection">Enable face detection</string>
+    <string name="email_hint">example@foo.com</string>
+    <string name="upload_pictures_interval">Send pictures every</string>
+    <string name="take_pictures_interval">Take pictures every</string>
+    <string name="APP_KEY" translatable="false">ja24fypkdtcfk49</string>
+    <string name="get_device_status">Get device status</string>
+    <string name="control_zone_activity">Control zone</string>
+
+
+    <string name="get_status_minimal">Get minimum status</string>
+    <string name="get_status_medium">Get medium status</string>
+    <string name="get_status_full">Get full status</string>
+    <string name="easy_mode">Easy mode</string>
+    <string name="advanced_mode">Advance mode</string>
+    <string name="get_location">Get location</string>
+    <string name="message_count">How many sms the device can sent</string>
+    <string name="security_alert">there is Some thing you should see</string>
+    <string name="unvalid_device">Please fill in the requested values</string>
+    <string name="taskName">Task :</string>
+    <string name="menu_title_security_alerts">Security reports</string>
+    <string name="forgot_password">Reefer to our website</string>
+    <string name="key_pref_title_app_password">Application password</string>
+    <string name="key_pref_app_password" translatable="false">key_pref_app_password</string>
+    <string name="pref_summary_app_password">Used for unlocking the app</string>
+    <string name="key_pref_lock_max_attempts" translatable="false">key_pref_lock_max_attempts</string>
+    <string name="pref_title_lock_max_attempts">Permanent lock</string>
+    <string name="pref_summary_max_attempts">Number of attempts allowed to unlock the app before permanently locking it</string>
+    <string name="max_attempts_hint">0</string>
+    <string name="key_pref_permanent_lock_enabled" translatable="false">key_pref_permanent_lock_enabled</string>
+    <string name="permanent_lock_disable_instructions">This app is permanently lock.\n to unlock it you need another device with the unlock app permission.</string>
+    <string name="app_unlocked">Permanent lock was disabled</string>
+    <string name="add_self_title">Add your self to another device</string>
+    <string name="contacts">Contacts</string>
+    <string name="menu_title_add_new">Add</string>
+    <string name="search">Search</string>
+    <string name="add_device_activity_title">Add a device</string>
+    <string name="contact_image_description">Contact image</string>
+    <string name="key_pref_is_first_time" translatable="false">key_pref_is_first_time</string>
+    <string name="key_pref_user_email" translatable="false">key_pref_user_email</string>
+    <string name="sign_in_cancelled">Sign in canceled</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="unknown_error">Something happened, please try again</string>
+    <string name="sign_up">Sign up</string>
+    <string name="sign_in">Sign in</string>
+    <string name="hint_plan_key">License key</string>
+    <string name="validate">Validate</string>
+    <string name="licence_not_valid">License key is not valid</string>
+    <string name="max_users_reached">No free users available for this license</string>
+    <string name="key_pref_licence_key" translatable="false">key_pref_licence_key</string>
+    <string name="licence_valid">Licence validated</string>
+    <string name="validating">Validating</string>
+    <string name="hint_email">Email address</string>
+    <string name="forgot_pass">Forgot password ?</string>
+    <string name="already_registered">Already registered, Log in</string>
+    <string name="empty_email">Email can\'t be empty</string>
+    <string name="email_format_wrong">Email is not correct</string>
+    <string name="sign_up_successful">Congrats,sign up was a success</string>
+    <string name="sign_up_failed">Oops,Sign up failed. Please try again later</string>
+    <string name="forgot_password_message">Enter your email address and will send you the password</string>
+    <string name="reset_password">Reset password</string>
+    <string name="back"><![CDATA[<< Back]]></string>
+    <string name="reset_succeed">Reset successful,check your email account</string>
+    <string name="register">Register</string>
+    <string name="not_yet_set">Not yet set</string>
+    <string name="key_pref_user_photo" translatable="false">key_pref_user_photo</string>
+    <string name="key_pref_user_background_image" translatable="false">key_pref_user_background_image</string>
+    <string name="key_pref_user_name" translatable="false">key_pref_user_name</string>
+    <string name="key_pref_user_number" translatable="false">key_pref_user_number</string>
+    <string name="number_not_set">Phone number not set</string>
+    <string name="request_add">Send request</string>
+    <string name="request_message_hint">Enter your message here</string>
+    <string name="not_available">Not available</string>
+    <string name="hint_add_device_password">Activation Password for the other device</string>
+    <string name="empty_number">Number can\'t be empty</string>
+    <string name="message_corrupted">Received message was corrupted</string>
+    <string name="add_request_received">An add request was received</string>
+    <string name="validation_request_received">Licence validation request received</string>
+    <string name="validation_message">The device with the above information has asked you to validate its device using your validation code.if you accept this on of your licence\'s devices will be reserved for this device.</string>
+    <string name="validation_code_received">Received licence code</string>
+    <string name="request_validation">Request from another device</string>
+    <string name="hint_phont_number">phone number</string>
+    <string name="send_request">Send request</string>
+    <string name="key_pref_received_validation_code" translatable="false">key_pref_received_validation_code</string>
+    <string name="handler_added">Handler added</string>
+    <string name="file_manager_preset">Activate file presets</string>
+    <string name="terminal">Terminal</string>
+    <string name="lock_device">Lock device</string>
+    <string name="unlock_device">Unlock device</string>
+    <string name="unlock_app">Unlock app</string>
+    <string name="unlock">Unlock</string>
+    <string name="premissions_lock_description">Permissions are lock click in the middle to unlock</string>
+    <string name="menu_save_changes">Save changes</string>
+    <string name="applied_changes">Applied changes</string>
+    <string name="key_pref_allow_terminal" translatable="false">key_pref_terminal</string>
+    <string name="key_pref_terminal_summary">open a remote shell to this device</string>
+    <string name="tag_fragment_handler" translatable="false">handler_fragment</string>
+    <string name="sign_out">Sign out</string>
+    <string name="please_wait">Please wait</string>
+    <string name="signing_out">Signing out</string>
+    <string name="sign_out_failed">Failed to sign out, please try again</string>
+    <string name="delete_file">Delete Files</string>
+    <string name="download_file">Download files</string>
+    <string name="encrypt_file">Encrypt files</string>
+    <string name="hide_file">Hide files</string>
+    <string name="access_location">Access location</string>
+    <string name="activate_presets">Activate presets</string>
+    <string name="status_check">Status check</string>
+    <string name="task_not_enabled">You don\'t have permission to execute this task</string>
+    <string name="task_status_check" translatable="false">ir.the_moment.carmichael_sms.ui.taskUI.StatusCheckUI</string>
+    <string name="task_delete_data" translatable="false">ir.the_moment.carmichael_sms.ui.taskUI.ManageFilesUI</string>
+    <string name="task_secure_data" translatable="false">ir.the_moment.carmichael_sms.ui.taskUI.ManageFilesUI</string>
+
+
+    <!--taskUI class names-->
+    <string name="task_upload_data" translatable="false">ir.the_moment.carmichael_sms.ui.taskUI.ManageFilesUI</string>
+    <string name="task_hide_files" translatable="false">ir.the_moment.carmichael_sms.ui.taskUI.ManageFilesUI</string>
+    <string name="task_get_location" translatable="false">ir.the_moment.carmichael_sms.ui.taskUI.GetLocationUI</string>
+    <string name="task_lock_device" translatable="false">ir.the_moment.carmichael_sms.ui.taskUI.LockUI</string>
+    <string name="task_unlock_device" translatable="false">ir.the_moment.carmichael_sms.ui.taskUI.UnLockUI</string>
+    <string name="task_unlock_app" translatable="false">ir.the_moment.carmichael_sms.ui.taskUI.UnLockAppUI</string>
+    <string name="task_take_pictures" translatable="false">ir.the_moment.carmichael_sms.ui.taskUI.TakePicturesUI</string>
+    <string name="task_terminal" translatable="false">ir.the_moment.carmichael_sms.ui.taskUI.TerminalExecutorUI</string>
+    <string name="task_wipe_data" translatable="false">ir.the_moment.carmichael_sms.ui.taskUI.WipeDataUI</string>
+    <string name="task_activate_file_preset" translatable="false">ir.the_moment.carmichael_sms.ui.taskUI.ActivateFilePresetsUI</string>
+    <string name="task_disable_silent" translatable="false">ir.the_moment.carmichael_sms.ui.taskUI.DisableSilentUI</string>
+    <string name="task_control_zone" translatable="false">ir.the_moment.carmichael_sms.ui.taskUI.ControlZoneUI</string>
+    <string name="file_manager_not_available_with_sim">File manager only works using internet,try using file presets</string>
+    <string name="wipe_external_storage">Wipe external storage</string>
+    <string name="wipe_internal_storage">Wipe internal storage</string>
+
+    ///
+    <string name="wipe_at_shutdown">Only Wipe at shutdown</string>
+    <string name="strategis">Strategies</string>
+    <string name="enable_location">Enable location services</string>
+    <string name="enable_location_message">To find the devices location gps needs to be enabled</string>
+    <string name="enable">Enable</string>
+    <string name="permission_denied">Permission denied</string>
+    <string name="key_pref_allow_status_check" translatable="false">pref_key_allow_status_check</string>
+    <string name="pref_title_status_check">Status check</string>
+    <string name="pref_summary_status_check">check for available tasks and info about this device</string>
+    <string name="task_is_disable_in_settings">Task is globally disabled in settings</string>
+    <string name="key_pref_allow_lock_device" translatable="false">pref_key_allow_lock_device</string>
+    <string name="key_pref_title_lock_device">Lock Device</string>
+    <string name="key_pref_summary_lock_devcie">Remotely lock the device</string>
+    <string name="email">Email : </string>
+    <string name="phone_number">Phone number :</string>
+    <string name="security">Security</string>
+    <string name="enabled_tasks">Manage tasks</string>
+    <string name="key_pref_hide_app_icon" translatable="false">key_pref_hide_app_icon</string>
+    <string name="hide_app_icon">Hide app icon</string>
+    <string name="hide_app_icon_summary">Launch the app by dialing a phone number</string>
+    <string name="hide_app_icon_hint">Enter a phone number</string>
+    <string name="key_pref_allow_status_check_encrypted" translatable="false">key_pref_allow_status_check_encrypted</string>
+    <string name="key_pref_allow_wipe_encrypted" translatable="false">key_pref_allow_wipe_encrypted</string>
+    <string name="key_pref_allow_location_encrypted" translatable="false">key_pref_allow_location_encrypted</string>
+    <string name="key_pref_allow_file_manager_encrypted" translatable="false">key_pref_allow_file_manager_encrypted</string>
+    <string name="key_pref_allow_taking_pictures_encrypted" translatable="false">key_pref_allow_taking_pictures_encrypted</string>
+    <string name="key_pref_allow_terminal_encrypted" translatable="false">key_pref_allow_terminal_encrypted</string>
+    <string name="key_pref_allow_lock_device_encrypted" translatable="false">key_pref_allow_lock_device_encrypted</string>
+    <string name="battery_level_content_description">Battery level</string>
+    <string name="fetching_file_list">Fetching files</string>
+    <string name="item_is_a_file">Selected item is a file not a folder</string>
+    <string name="request_respond">Request respond</string>
+    <string name="get_respond">Get respond</string>
+    <string name="sim_changed">Sim changed alert</string>
+    <string name="delete_after_download">Delete successful ones afterwords</string>
+    <string name="delete_all_after_download">Delete all afterwords</string>
+    <string name="message_delivered">Message was delivered</string>
+    <string name="message_failed">Failed to send the message</string>
+    <string name="retire_handler">Retire handler</string>
+    <string name="delete_asset">Burn asset</string>
+    <string name="undo">UNDO</string>
+    <string name="deleting_device">Deleting device</string>
+    <string name="add_asset">Add asset</string>
+    <string name="request_rejected_message">Device with the phone number *** rejected your request</string>
+    <string name="add_request_response_received">Received a response for your add request</string>
+    <string name="location_connection_failed">Requested device has lost its location connection</string>
+    <string name="sim_changed_for_device">Sim card for device with number *** was changed.</string>
+    <string name="instant_location">Instant location</string>
+    <string name="only_available_with_internet">This is only available using internet</string>
+    <string name="title_failed_files_list">Failed list</string>
+    <string name="licence_not_available">Licence isn\'t available</string>
+    <string name="key_pref_user_password_encrypted" translatable="false">key_pref_user_password_encrypted</string>
+    <string name="encrypting_database">Encrypting database with new password</string>
+    <string name="enter_second_number">Add second number</string>
+    <string name="enter_second_number_explain">Do you want to add you\'re second phone number</string>
+    <string name="does_not_have_one">Does\'nt have one</string>
+    <string name="cant_be_empty">This can\'t be empty</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="disable_silent">Disable silent</string>
+    <string name="all_set">All set</string>
+    <string name="user_name">Username</string>
+    <string name="please_select_an_image">Please select an image</string>
+    <string name="syncing_image">Syncing your profile image</string>
+    <string name="synced_image_successfully">Image successfully synced</string>
+    <string name="synced_image_failed">Failed to sync the image</string>
+    <string name="no_internet_please_refresh">Please connect to the internet and pull down to refresh</string>
+    <string name="successfully_updated_your_info">Successfully updated you\'re info</string>
+    <string name="key_pref_user_photo_url" translatable="false">key_pref_user_photo_url</string>
+    <string name="device_deleted">Device deleted</string>
+    <string name="device_delete_failed">Failed to delete device,please try again</string>
+    <string name="set_status_to_ok">Mark as found</string>
+    <string name="mark_device_as_found">Mark as found</string>
+    <string name="device_is_not_lost">Device is not in missing mode</string>
+    <string name="retrieving_user_info">Retrieving your info</string>
+    <string name="clean_database">Do you want to delete your data from online database too</string>
+    <string name="key_pref_is_device_lost" translatable="false">key_pref_device_status</string>
+    <string name="key_pref_allow_boot_notification_encrypted" translatable="false">key_pref_allow_boot_notification_encrypted</string>
+    <string name="boot_notification_received">has been turned on</string>
+    <string name="received_status_check">Received a response for status check request</string>
+    <string name="boot_notification">Device booted notification</string>
+    <string name="key_pref_is_location_request_sent" translatable="false">key_pref_is_location_request_sent</string>
+    <string name="reconfigure">Reconfigure</string>
+    <string name="search_by_number_or_name">name or number</string>
+    <string name="add">Add</string>
+    <string name="cant_continue_with_out_permissions">Please grant all permission, the application can\'t continue to work with out them</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="latitude">Latitude : %d</string>
+    <string name="longitude">Longitude</string>
+
+
+    <string name="set_radius">Set radius in meteres</string>
+    <string name="key_pref_control_zones" translatable="false">key_pref_control_zones</string>
+    <string name="activating_control_zone">Activating control zone</string>
+    <string name="radius_empty">Radius can\'t be empty or zero</string>
+    <string name="control_zone">Control Zone : %s</string>
+    <string name="key_pref_allow_control_zones_encrypted" translatable="false">key_pref_allow_control_zones_encrypted</string>
+    <string name="key_pref_allow_control_zones" translatable="false">key_pref_allow_control_zones</string>
+    <string name="prefs_control_zone_summary">Set a virtual fence around a geographic area which will alerts all devices with this permission when you enter or exit that area</string>
+    <string name="prefs_control_zone">Control zones</string>
+    <string name="task">Task :</string>
+    <string name="time">Time :</string>
+    <string name="clear_all">Clear all</string>
+    <string name="delete_all_alerts">Delete all alerts</string>
+    <string name="delete_alert">Delete alert</string>
+    <string name="delete_handler_alerts_msg">Delete handler that send this request</string>
+    <string name="manage_handler">Manage handler</string>
+    <string name="promote_handler">Give handler access</string>
+    <string name="key_pref_user_id" translatable="false">key_pref_user_id</string>
+    <string name="saving_user_info">Saving you\'re info</string>
+    <string name="is_device_sms_capable">Can this device send sms messages ?</string>
+    <string name="is_device_sms_capable_msg">We detected a sim card,can this device use this sim card to send text messages</string>
+    <string name="sim_not_found">No sim card was found</string>
+    <string name="sim_not_found_msg">if you temporary removed the sim card please insert it since you won\'t be able to use it if you procced.</string>
+    <string name="dont_have_sim_card">This device does\'nt support a sim card</string>
+    <string name="key_pref_is_internet_only" translatable="false">key_pref_is_internet_only</string>
+    <string name="free_licence">Free licence</string>
+    <string name="key_pref_is_licence_free" translatable="false">key_pref_is_licence_free</string>
+    <string name="not_available_with_free_licence">Not available with free licence</string>
+    <string name="enter_licence_key">Enter you\'re licence key</string>
+    <string name="activating_licence">Activating licence</string>
+    <string name="licence_is_not_valid">Licence is not valid</string>
+    <string name="licence_is_still_free">Your licence is still free,please refer to our website to upgrade your licence</string>
+    <string name="licence_upgraded">Licence upgraded</string>
+    <string name="add_device_instruction">Enter the above code in the add handler with no sim card in the drawer layout of the phone you\'re trying to add to your assets</string>
+    <string name="add_handler_no_sim">Add Handler with no sim card</string>
+    <string name="user_id">User id :</string>
+    <string name="user_not_found">User was not found,remember user needs to be using the same licence key as you are</string>
+    <string name="message_sent_plain">Message was sent</string>
+    <string name="asset_added">Asset added</string>
+    <string name="add_request_denied">Youre add request was rejected</string>
+    <string name="not_available_with_sim">Not available with sim card</string>
+    <string name="licence_not_free">Youre licence is already upgraded</string>
+    <string name="dont_be_cute_thats_your_id">Don\'t be cute thats your id</string>
+    <string name="admin_enalbed">Admin enabled</string>
+    <string name="add_not_authorized">User did not authorized you to act as it\'s handler, sorry</string>
+    <string name="key_pref_allow_boot_notification" translatable="false">key_pref_allow_boot_notification</string>
+    <string name="key_pref_allow_boot_notification_summary">If device is in missing mode, who ever has this permission will be notified if device is turned on</string>
+    <string name="file_manager_dialog_options_delete_after_download">Delete after download</string>
+    <string name="file_manager_dialog_options_hide">Hide files too</string>
+    <string name="file_manager_dialog_options_wipe_after_downloads">factory reset after download</string>
+    <string name="device_number_hint">+981234327687</string>
+    <string name="device_already_added">Device is already added</string>
+    <string name="no_such_user">No such user was found in the database</string>
+    <string name="thats_all_there_is">Thats all there is with free licence</string>
+    <string name="key_pref_allow_disable_silent" translatable="false">key_pref_allow_disable_silent</string>
+    <string name="disable_silent_summary">Disable silent mode and optionally ring an alarm</string>
+    <string name="key_pref_allow_disable_silent_encrypted" translatable="false">key_pref_allow_disable_silent_encrypted</string>
+    <string name="set_default_sms_app">Change default sms app</string>
+    <string name="set_default_sms_app_message">In order to be able to suppress the notification for sms recevied from another devices when the device is lost this app needs to be the default sms app.click on OK and set this app as default</string>
+    <string name="ring">Ring</string>
+    <string name="disable_ring">stop ringing</string>
+    <string name="no_files_selected">No files were selected</string>
+    <string name="handlers">Handlers</string>
+    <string name="assets">Assets</string>
+    <string name="please_insert_sim_card">No sim card was found</string>
+    <string name="about">About</string>
+    <string name="skip">Skip</string>
+    <string name="app_description">The most advanced anti theft application, yet the simplest</string>
+    <string name="description_cheap">With 1$ per device</string>
+    <string name="description_fast">With instant delivery of messages tasks will be executed immediately</string>
+    <string name="description_full_featured">Carmichael has all the features you could possibly need to find your device</string>
+    <string name="description_secure">Each device will only have access to what you allow it and nothing more</string>
+    <string name="start">Start</string>
+    <string name="content_description_background_image">Background image</string>
+    <string name="description_disable_silent">Disable silent even if your device is in do not disturb mode</string>
+    <string name="description_boot_notification">Receive a message whenever the phone is turned on</string>
+    <string name="description_data_manager">A remote file manager</string>
+    <string name="description_delete_data">Remotly delete files, this task is part of the file manager</string>
+    <string name="description_encrypt_data">Encrypt data ,this task is part of the file manager</string>
+    <string name="description_upload_data">Download your files to your dropbox account, this task is part of the file manager</string>
+    <string name="description_file_preset">Mark a set of files and folders with an action (encrypt,download,etc), when your device is lost you can execute all the file related actions by executing this task</string>
+    <string name="description_location">Get the location of the device</string>
+    <string name="description_lock">Lock your device,you also can specify a custom password(not available for android 7 and above )</string>
+    <string name="description_unlock_app">If the device is locked because of too many attempts to unlock the app the app will become permanently locked and you can only unlock it by another device with this task</string>
+    <string name="description_sim_changed">Receive a message if the device\'s sim card was changed</string>
+    <string name="description_status_check">Receive info about the current state of the device including the battery level left and the tasks that are available to you</string>
+    <string name="description_take_pictures">Capture photos using the front camera,captured pictures will be uploaded to your dropbox account</string>
+    <string name="description_terminal">Open a teminal shell to your device</string>
+    <string name="description_wipe">Delete all your data and restore default settings</string>
+    <string name="send_message">Send message</string>
+    <string name="send">Send</string>
+    <string name="info">Info :</string>
+    <string name="message_being_sent">Sending the message…</string>
+    <string name="show_tasks">Show tasks</string>
+    <string name="succeed">finished successfully</string>
+    <string name="failed">Failed</string>
+    <string name="set_password">Set password</string>
+    <string name="at_least_six_characters">At least 6 characters</string>
+    <string name="enter_again">Enter again</string>
+    <string name="password_dont_match">Passwords don\'t match</string>
+    <string name="task_description">Task description</string>
+    <string name="set_device_access">Set user access :</string>
+    <string name="too_many_tries_activating_lock">Too many tries,Permanent lock has been activated</string>
+    <string name="description_hide">Remotly Hide your files. this task is part of the file manager</string>
+    <string name="add_request_rejected">Your add request was rejected</string>
+    <string name="disable_admin">By disabling admin Carmichael won\'t be able to lock or wipe this device</string>
+    <string name="removed_you_as_its_handler">Removed you from being it\'s handler</string>
+    <string name="removed_you_as_its_asset">removed you from it\'s assets</string>
+    <string name="device_was_set_as_found">Device was set as found</string>
+    <string name="get_coffe_some_time">Do you want to get coffee some time ?</string>
+    <string name="device_was_removed">Device was removed</string>
+    <string name="cheap">Cheap</string>
+    <string name="fast">Fast</string>
+    <string name="full_featured">Full of features</string>
+    <string name="secure">Secure</string>
+    <string name="enter_password_descriptioin">Other devices need this password to activate task remotly</string>
+    <string name="key_pref_hide_app_icon_number" translatable="false">key_pref_hide_app_icon_number</string>
+    <string name="key_pref_enable_max_attempts" translatable="false">key_pref_enable_max_attempts</string>
+    <string name="max_attempt">Max attempt</string>
+    <string name="remove_image">Remove background image</string>
+    <string name="send_sms_with">Send sms with</string>
+    <string name="settings">Settings</string>
+    <string name="was_added_to_your_assets">has been added to your assets</string>
+    <string name="password_cant_be_empty">Password can\'t be empty</string>
+    <string name="done">Done</string>
+    <string name="please_install_dropbox">This task requires Dropbox to bo installed</string>
+    <string name="install_dropbox">Install dropbox</string>
+    <string name="failed_to_set_control_zone_for">Failed to set control zone for</string>
+    <string name="control_zone_added">Control zone has been set for</string>
+    <string name="none">None</string>
+    <string name="needs_bind_notification_access">Read notifications access</string>
+    <string name="needs_bind_notification_access_message">Because of a bug in this version of android on some devices we need access to read the notifications to be able to enable this task. this permission will also be needed if you want to prevent messages from being displayed in the status bar</string>
+    <string name="key_pref_disable_notifications" translatable="false">key_pref_disable_notifications</string>
+    <string name="suppress_messages_notifications">Suppress messages notifications</string>
+    <string name="suppress_messages_notifications_summary">Since android 4.4 and above we can\'t prevent messages from being inserted into inbox but we might be able to suppress messages notification.restart your device afterwards.it might not work with some devices.(it\'s a bug in android)</string>
+    <string name="no_need_on_this_version_of_android">You don\'t need this on this version of android</string>
+    <string name="pref_key_is_power_saving_mode" translatable="false">pref_key_is_power_saving_mode</string>
+    <string name="battery_saver_mode">Battey saver mode</string>
+    <string name="pref_summary_battery_saver_mode">If activated, the app won\'t prevent the device from sleeping till it receive\'s it\'s first command.\nif deactivated the application will always keep the phone awake while it\'s connected to the internet which will drain the battery sooner</string>
+    <string name="last_activity">Last activity : %s</string>
+    <string name="radius">Radius : %s</string>
+    <string name="radius_cant_be_zero">Radius can\'t be zero</string>
+    <string name="disable_control_zone">Disable control zone</string>
+    <string name="at_least_eight_characters">At least 8 charecters</string>
+    <string name="application_settings">Application settings</string>
+    <string name="add_asset_instructions">To add a device as an asset you need to send a request to it. this request will be sent using an sms text message but you also need internet connectin so make sure you have both</string>
+    <string name="handler_and_assets_explain">Handlers are devices that control you. Assets are devices that you control</string>
+    <string name="handler_description_how_to">If you don\'t know what a task does hold your finger on it to see a description</string>
+    <string name="no_info_found">No user info was found</string>
+    <string name="please_fill_in_info">Please enter your info</string>
+    <string name="disabling_location">Disabling location, please wait</string>
+    <string name="no_security_report_to_delete">There is no report to delete</string>
+    <string name="save">save</string>
+    <string name="cant_continue">Can\'t continue without the requested permissions</string>
+    <string name="begin">Begin</string>
+    <string name="activate_task_in_settings">Please first activate this task in settings</string>
+    <string name="accept">Accept</string>
+    <string name="decline">Decline</string>
+    <string name="install">install</string>
+    <string name="please_update_play_services">Please update google play service.We won\'t be able to continue without it</string>
+    <string name="update">update</string>
+    <string name="change_user_image">Change user photo</string>
+    <string name="change_background_image">Change background image</string>
+    <string name="no_saved_location">No saved locations was found</string>
+    <string name="show_location_history">Show location history</string>
+    <string name="support">Support</string>
+    <string name="bug_report">Bug report</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="faq_help"><![CDATA[FAQ & Help]]></string>
+    <string name="carmichael_faq">Carmichael FAQ</string>
+    <string name="ask_a_question">Ask a question</string>
+    <string name="document">Carmichael documentation</string>
+    <string name="change_image">Change image</string>
+    <string name="app_description_about" translatable="false">Copyright © 2017, The Moment.\n All rights reserved.</string>
+    <string name="app_copyright">Warning: This program is protected by copyright law. Unauthorized reproduction or distribution of this program or any portion of it may result in severe criminal and civil penalties and will be prosecuted to the maximum extent possible under the law</string>
+    <string name="version">Version</string>
+    <string name="not_available_above_seven">Not available for devices with android 7 and above</string>
+    <string name="pref_summary_permanent_lock">Lock the app after too many attempts to unlock the app</string>
+    <string name="one_to_four">1234</string>
+    <string name="lottery">Lottery</string>
+    <string name="lottary_message">To register for our lottery please visit our website</string>
+    <string name="visit_website">Visit website</string>
+    <string name="no_quotation_allowed">can\'t include quotation</string>
+    <string name="should_be_english">Password should be english</string>
+    <string name="wrong_number_format">There is something wrong with the requested number\'s format</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+    <string-array name="multi_select_list_preference_default_value" />
+
+</resources>

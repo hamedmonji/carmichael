@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp">
+
+        <FrameLayout
+            android:transitionName="user"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_gravity="center"
+                android:id="@+id/device_image"
+                android:transitionName="image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/device_image_content_description"
+                tools:src="@drawable/blue_electric" />
+
+            <TextView
+                android:textStyle="bold"
+                android:transitionName="text"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:id="@+id/device_image_text"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                tools:text="V"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp">
+
+            <TextView
+                android:maxLength="13"
+                android:id="@+id/device_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                tools:text="09010892609" />
+
+            <TextView
+                android:visibility="gone"
+                android:layout_marginTop="8dp"
+                android:id="@+id/device_alternate_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="09138798609" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:id="@+id/linearLayout9">
+
+            <CheckBox
+                android:id="@+id/hasInternet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/internet" />
+
+            <CheckBox
+                android:id="@+id/request_respond"
+                android:checked="true"
+                android:text="@string/get_respond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:contentDescription="@string/battery_level_content_description"
+                android:layout_gravity="center"
+                android:id="@+id/battery_level_image"
+                tools:src="@drawable/battery_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/battery_level_text"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                tools:text="25%"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

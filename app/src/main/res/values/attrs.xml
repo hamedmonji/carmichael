@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TaskView">
+        <attr name="permission" format="integer"/>
+        <attr name="taskName" format="string"/>
+        <attr name="text" format="string"/>
+        <attr name="src" format="reference"/>
+        <attr name="cornerRadius" format="dimension"/>
+    </declare-styleable>
+</resources>

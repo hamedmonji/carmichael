@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/device_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <FrameLayout
+            android:id="@+id/user_image_text_container"
+            android:transitionName="user"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_gravity="start|center"
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:transitionName="image"
+                android:id="@+id/device_image"
+                android:layout_gravity="start"
+                tools:src="@drawable/blue_electric"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:transitionName="text"
+                android:textStyle="bold"
+                android:id="@+id/device_image_text"
+                tools:visibility="visible"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textSize="28sp"
+                android:layout_gravity="center"
+                tools:text="V"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="start"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@color/black"
+                        tools:text="Victoria"
+                        android:maxLines="1"
+                        android:textSize="17sp"
+                        android:id="@+id/device_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textColor="@color/dark_gray"
+                        android:id="@+id/device_number"
+                        android:layout_marginTop="5dp"
+                        tools:text="0913 879 8609"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/handler_rank"
+                    android:visibility="visible"
+                    android:layout_gravity="end|center"
+                    tools:src="@drawable/military_2"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp" />
+
+            </LinearLayout>
+
+                <View
+                    android:alpha="0.3"
+                    android:background="@color/dark_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"/>
+
+            </LinearLayout>
+
+</LinearLayout>
