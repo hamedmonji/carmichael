@@ -1,4 +1,4 @@
 # carmichael
 Anti-theft android app
 
-initially written in java now being converted to kotlin and jetpack
+initially written in java(first year of programming!) now being converted to kotlin and jetpack(hopefully)
