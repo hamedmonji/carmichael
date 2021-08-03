@@ -1,1 +1,1 @@
-include ':app', ':lollipin', ':floatingSearchView'
+include ':app'
