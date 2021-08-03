@@ -1,7 +1,7 @@
 package ir.the_moment.carmichael_sms.ui.taskUI.base;
 
 import android.content.DialogInterface;
-import android.support.v7.app.AlertDialog;
+import androidx.appcompat.app.AlertDialog;
 import android.view.View;
 
 import ir.the_moment.carmichael_sms.Message;

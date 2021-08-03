@@ -6,7 +6,7 @@ import android.preference.PreferenceManager;
 import android.provider.Telephony;
 import android.service.notification.NotificationListenerService;
 import android.service.notification.StatusBarNotification;
-import android.support.annotation.RequiresApi;
+import androidx.annotation.RequiresApi;
 import android.util.Log;
 
 @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR2)

@@ -1,6 +1,6 @@
 package ir.the_moment.carmichael_sms.ui.taskUI;
 
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.View;
 
 import ir.the_moment.carmichael_sms.Message;

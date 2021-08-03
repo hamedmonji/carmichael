@@ -4,9 +4,9 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.CardView;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
@@ -17,7 +17,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
-import com.github.orangegangsters.lollipin.lib.managers.AppLock;
+import com.github.omadahealth.lollipin.lib.managers.AppLock;
 import com.hbb20.CountryCodePicker;
 
 import ir.the_moment.carmichael_sms.mR;

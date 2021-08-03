@@ -4,11 +4,12 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.widget.Toast;
 
-import com.github.orangegangsters.lollipin.lib.managers.AppLock;
-import com.github.orangegangsters.lollipin.lib.managers.LockManager;
+
+import com.github.omadahealth.lollipin.lib.managers.AppLock;
+import com.github.omadahealth.lollipin.lib.managers.LockManager;
 
 import ir.the_moment.carmichael_sms.MainActivity;
 import ir.the_moment.carmichael_sms.utility.Security;

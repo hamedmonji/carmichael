@@ -1,6 +1,6 @@
 package ir.the_moment.carmichael_sms.tasks.dataManager;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.util.Log;
 
 import com.dropbox.core.DbxException;

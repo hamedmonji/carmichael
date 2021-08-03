@@ -4,7 +4,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     tools:showIn="@layout/activity_signing">
 
-    <android.support.design.widget.TextInputLayout
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/plan_key_container"
         android:visibility="gone"
         tools:visibility="visible"
@@ -22,7 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-    </android.support.design.widget.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
     <FrameLayout
         android:layout_marginTop="16dp"

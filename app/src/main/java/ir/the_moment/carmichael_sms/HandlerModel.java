@@ -1,7 +1,7 @@
 package ir.the_moment.carmichael_sms;
 
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 /**
  * Created by vaas on 7/9/17.

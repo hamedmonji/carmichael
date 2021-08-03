@@ -5,8 +5,8 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 
 import com.bumptech.glide.Glide;
-import com.github.orangegangsters.lollipin.lib.managers.AppLock;
-import com.github.orangegangsters.lollipin.lib.managers.AppLockActivity;
+import com.github.omadahealth.lollipin.lib.managers.AppLock;
+import com.github.omadahealth.lollipin.lib.managers.AppLockActivity;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 import ir.the_moment.carmichael_sms.R;
@@ -84,6 +84,11 @@ public class CustomPinActivity extends AppLockActivity {
         }else {
             super.onBackPressed();
         }
+    }
+
+    @Override
+    public void showForgotDialog() {
+
     }
 
     @Override

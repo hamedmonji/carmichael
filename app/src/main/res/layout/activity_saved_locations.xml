@@ -15,7 +15,7 @@
         android:layout_height="match_parent"
         android:name="com.google.android.gms.maps.SupportMapFragment"/>
 
-    <android.support.v7.widget.Toolbar
+    <androidx.appcompat.widget.Toolbar
         android:background="@color/transparent"
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -30,14 +30,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
-        <android.support.design.widget.FloatingActionButton
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/last_location"
             android:src="@drawable/last_location"
             android:background="@color/colorAccent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
-        <android.support.design.widget.FloatingActionButton
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/set_location_updates"
             android:layout_gravity="bottom|end"
             android:layout_marginTop="8dp"

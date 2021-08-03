@@ -1,23 +1,48 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 31
     buildToolsVersion '30.0.2'
     defaultConfig {
         applicationId "ir.the_moment.carmichael_sms"
         minSdkVersion 21
-        targetSdkVersion 30
+        targetSdkVersion 31
         versionCode 4
         versionName "1.0.3"
         multiDexEnabled true
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
         vectorDrawables.useSupportLibrary = true
     }
+
+    buildFeatures {
+        // Enables Jetpack Compose for this module
+        compose true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"
+        useIR = true
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion '1.0.0'
+        kotlinCompilerVersion '1.5.10'
+    }
+
     packagingOptions {
         exclude 'META-INF/LICENSE'
         exclude 'META-INF/LICENSE.txt'
         exclude 'META-INF/NOTICE'
         exclude 'META-INF/NOTICE.txt'
+        resources {
+            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+        }
     }
     dexOptions {
         javaMaxHeapSize "4g"
@@ -40,38 +65,51 @@ android {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile files('libs/jasypt-1.9.2.jar')
-    compile files('libs/local_policy.jar')
-    compile files('libs/US_export_policy.jar')
-    compile files('libs/commons-io-2.5.jar')
-    compile files('libs/glide-3.8.0.jar')
-    compile "com.android.support:customtabs:$support_version"
-    compile "com.android.support:appcompat-v7:$support_version"
-    compile "com.android.support:support-v4:$support_version"
-    compile "com.android.support:support-v13:$support_version"
-    compile "com.android.support:support-vector-drawable:$support_version"
-    compile "com.android.support:cardview-v7:$support_version"
-    compile "com.android.support:design:$support_version"
-    compile "com.android.support:mediarouter-v7:$support_version"
-    compile "com.android.support:palette-v7:$support_version"
-    compile "com.google.android.gms:play-services-location:$firebase_version"
-    compile "com.google.firebase:firebase-core:$firebase_version"
-    compile "com.google.firebase:firebase-crash:$firebase_version"
-    compile "com.google.android.gms:play-services-maps:$firebase_version"
-    compile project(':lollipin')
-    compile project(':floatingSearchView')
-    compile 'com.github.scottyab:AESCrypt-Android:c91d6a3c43'
-    compile 'com.aurelhubert:ahbottomnavigation:1.4.0'
-    compile 'com.android.support:multidex:1.0.1'
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile 'junit:junit:4.12'
-    compile 'com.dropbox.core:dropbox-core-sdk:2.0.1'
-    compile 'com.hbb20:ccp:1.7.6'
-    compile 'de.hdodenhof:circleimageview:2.1.0'
-    compile 'com.miguelcatalan:materialsearchview:1.4.0'
-    compile 'com.github.deano2390:MaterialShowcaseView:1.3.4'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation files('libs/jasypt-1.9.2.jar')
+    implementation files('libs/local_policy.jar')
+    implementation files('libs/US_export_policy.jar')
+    implementation files('libs/commons-io-2.5.jar')
+    implementation files('libs/glide-3.8.0.jar')
+    implementation 'androidx.browser:browser:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v13:1.0.0'
+    implementation 'androidx.vectordrawable:vectordrawable:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.mediarouter:mediarouter:1.0.0'
+    implementation 'androidx.palette:palette:1.0.0'
+    implementation "com.google.android.gms:play-services-location:$firebase_version"
+    implementation "com.google.firebase:firebase-core:$firebase_version"
+    implementation "com.google.firebase:firebase-crash:$firebase_version"
+    implementation "com.google.android.gms:play-services-maps:$firebase_version"
+    implementation "com.github.omadahealth:lollipin:2.1.0"
+    implementation "com.github.arimorty:floatingsearchview:2.1.1"
+    implementation 'com.github.scottyab:AESCrypt-Android:c91d6a3c43'
+    implementation 'com.aurelhubert:ahbottomnavigation:1.4.0'
+    implementation 'androidx.multidex:multidex:2.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'junit:junit:4.12'
+    implementation 'com.dropbox.core:dropbox-core-sdk:2.0.1'
+    implementation 'com.hbb20:ccp:2.5.4'
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+    implementation 'com.github.deano2390:MaterialShowcaseView:1.3.4'
+
+    implementation 'androidx.activity:activity-compose:1.3.0'
+    // Compose Material Design
+    implementation 'androidx.compose.material:material:1.0.0'
+    // Animations
+    implementation 'androidx.compose.animation:animation:1.0.0'
+    // Tooling support (Previews, etc.)
+    implementation 'androidx.compose.ui:ui-tooling:1.0.0'
+    implementation "androidx.compose.ui:ui:$compose_version"
+    implementation "androidx.compose.ui:ui-tooling-preview:$compose_version"
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.3.1'
+    // Integration with ViewModels
+
+    // UI Tests
+    androidTestImplementation 'androidx.compose.ui:ui-test-junit4:1.0.0'
 }
 
-apply plugin: 'com.google.gms.google-services'
-apply plugin: 'kotlin-android'
+

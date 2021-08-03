@@ -9,9 +9,10 @@ import android.preference.Preference;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
 import android.provider.Settings;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
-import com.github.orangegangsters.lollipin.lib.managers.AppLock;
+
+import com.github.omadahealth.lollipin.lib.managers.AppLock;
 
 import ir.the_moment.carmichael_sms.ui.lock.CustomPinActivity;
 import ir.the_moment.carmichael_sms.R;

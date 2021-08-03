@@ -1,7 +1,7 @@
 package ir.the_moment.carmichael_sms.messageHandler;
 
 import android.content.Context;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 import ir.the_moment.carmichael_sms.mR;
 import ir.the_moment.carmichael_sms.DeviceModel;

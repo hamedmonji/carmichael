@@ -103,7 +103,7 @@ public class GetLocationUI extends TaskUI {
         if (isLocationSent) {
             CharSequence[] items = {getContext().getString(R.string.disable),getContext().getString(R.string.reconfigure)
                     ,getContext().getString(R.string.cancel)};
-            new android.support.v7.app.AlertDialog.Builder(getContext())
+            new androidx.appcompat.app.AlertDialog.Builder(getContext())
                     .setTitle(R.string.location_already_sent_title)
                     .setItems(items, new DialogInterface.OnClickListener() {
                         @Override

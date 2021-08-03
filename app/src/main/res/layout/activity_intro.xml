@@ -10,7 +10,7 @@
     android:fitsSystemWindows="true"
     tools:context="the_moment.carmichael_sms.a.the_moment.carmichael_sms.ui.intro.IntroActivity">
 
-    <android.support.v4.view.ViewPager
+    <androidx.viewpager.widget.ViewPager
         android:id="@+id/intro_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

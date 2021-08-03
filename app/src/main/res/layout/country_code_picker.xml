@@ -16,8 +16,8 @@
         android:layout_height="match_parent"
         android:layout_marginLeft="4dp"
         android:layout_marginRight="4dp"
-        app:keyboardAutoPopOnSearch="true"
-        app:defaultNameCode="US" />
+        app:ccpDialog_keyboardAutoPopup="true"
+        app:ccp_defaultNameCode="US" />
 
     <EditText
         android:gravity="center"

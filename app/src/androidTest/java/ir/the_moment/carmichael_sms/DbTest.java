@@ -1,6 +1,6 @@
 package ir.the_moment.carmichael_sms;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * Created by vaas on 5/19/17.
